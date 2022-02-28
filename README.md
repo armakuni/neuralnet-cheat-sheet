@@ -1,6 +1,6 @@
 # Flow Charts to make Machine Learning Easier
 
-## Choosing your activation function
+## What activation function should I use?
 
 ```mermaid
 graph TD
@@ -16,3 +16,23 @@ graph TD
 *  https://stackoverflow.com/questions/63883842/can-relu-be-used-at-the-last-layer-of-a-neural-network
 *  https://dataaspirant.com/difference-between-softmax-function-and-sigmoid-function/
 *  https://patrickhoo.wixsite.com/diveindatascience/single-post/2019/06/13/activation-functions-and-when-to-use-them
+
+## What metric function should I use?
+
+```mermaid
+graph TD
+    A[What metric function should I use?] --> B{"What's the question?"}
+    B -->|Classification| C[Use Accuracy]
+    B -->|Something else| C[Use Loss]
+```
+
+
+## What loss function should I use?
+
+```mermaid
+graph TD
+    A[What loss function should I use?] --> B{"What's the question?"}
+    B -->|"Is this a or b<br />Binary classification"| C[binary crossentropy]
+    B -->|"Is this a or b or c or d or ... ?<br />Multi-classification"| D[categorical crossentropy]
+    B -->|"Predict a number greater than 0<br />Regression"| E[Mean Absolute Error]
+```
