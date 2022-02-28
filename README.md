@@ -24,7 +24,7 @@ graph TD
 ```mermaid
 graph TD
     A[What metric function should I use?] --> B{"What's the question?"}
-    B -->|Classification| C[Use Accuracy]
+    B -->|"Is this a or b or c or d or ... ?<br />Classification"| C[Use Accuracy]
     B -->|Something else| D[Use Loss]
 ```
 
