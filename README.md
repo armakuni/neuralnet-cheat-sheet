@@ -4,7 +4,30 @@
 
 More experienced 🔢mathemagicians✨ or 👨‍🔬 data scientists 👩‍🔬 might recommend something else.
 
-## What activation function should I use?
+## Problem Selection
+
+First question is do you need a neural net. They aren't always the best thing
+
+
+```mermaid
+graph TD
+    START[What algorythm should I use?] --> LABEL{"Does your data already have an<br />answer (or label) column?"}
+    LABEL -->|No| CLUSTERING[Use clustering]
+    LABEL -->|Yes| IMPROVE{"Do you already have a model<br />you want to improve?"}
+    IMPROVE -->|"Yes"| CARE{"What do you care about?"}
+    CARE -->|Speed| SPEED[Random Search]
+    CARE -->|Accuracy| ACC[Grid Search]
+    IMPROVE -->|"No"| LINEAR{"Plot your data<br />onto a graph<br />can you seperate it<br />with a straight line?"}
+    LINEAR -->|"No"| NN["Use a neural net"]
+    LINEAR -->|"Yes"| LR["Linear Regression"]
+```
+
+
+## Neural Nets
+
+It looks like a neural net is your best option, how should it be setup?
+
+### What activation function should I use?
 
 ```mermaid
 graph TD
@@ -23,7 +46,7 @@ graph TD
 *  https://dataaspirant.com/difference-between-softmax-function-and-sigmoid-function/
 *  https://patrickhoo.wixsite.com/diveindatascience/single-post/2019/06/13/activation-functions-and-when-to-use-them
 
-## What metric function should I use?
+### What metric function should I use?
 
 ```mermaid
 graph TD
@@ -33,7 +56,7 @@ graph TD
 ```
 
 
-## What loss function should I use?
+### What loss function should I use?
 
 ```mermaid
 graph TD
