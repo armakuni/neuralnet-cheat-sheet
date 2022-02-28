@@ -32,7 +32,7 @@ graph TD
 ```mermaid
 graph TD
     A[What loss function should I use?] --> B{"What's the question?"}
-    B -->|"Is this a or b<br />Binary classification"| C[binary crossentropy]
-    B -->|"Is this a or b or c or d or ... ?<br />Multi-classification"| D[categorical crossentropy]
-    B -->|"Predict a number greater than 0<br />Regression"| E[Mean Absolute Error]
+    B -->|"Is this a or b<br />Binary classification"| C[Binary Crossentropy]
+    B -->|"Is this a or b or c or d or ... ?<br />Multi-classification"| D[Categorical Crossentropy]
+    B -->|"Something else"| E[Mean Absolute Error]
 ```
