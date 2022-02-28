@@ -16,9 +16,9 @@ graph TD
     POINTS -->|Unusual Points| ANO[Anomoly Detection]
     POINTS -->|Groupings of Points| CLUSTERING[Clustering]
     LABEL -->|Yes| IMPROVE{"Do you already have a model<br />you want to improve?"}
-    IMPROVE -->|"Yes"| CARE{"What do you care about?"}
-    CARE -->|Speed| SPEED[Random Search]
-    CARE -->|Accuracy| ACC[Grid Search]
+    IMPROVE -->|"Yes"| CARE{"Should your search for improvmeents be..."}
+    CARE -->|Fast, but innacurate| SPEED[Random Search]
+    CARE -->|Slow, but accurate| ACC[Grid Search]
     IMPROVE -->|"No"| LINEAR{"Plot your data<br />onto a graph<br />can you seperate it<br />with a straight line?"}
     LINEAR -->|"No"| NN["Neural net"]
     LINEAR -->|"Yes"| LR["Linear Regression"]
