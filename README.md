@@ -11,14 +11,16 @@ First question is do you need a neural net. They aren't always the best thing
 
 ```mermaid
 graph TD
-    START[What algorythm should I use?] --> LABEL{"Does your data already have an<br />answer (or label) column?"}
-    LABEL -->|No| CLUSTERING[Use clustering]
+    START[What algorithm should I use?] --> LABEL{"Does your data already have an<br />answer (or label) column?"}
+    LABEL -->|No| POINTS{"What do you want to find?"}
+    POINTS -->|Unusual Points| ANO[Anomoly Detection]
+    POINTS -->|Groupings of Points| CLUSTERING[Clustering]
     LABEL -->|Yes| IMPROVE{"Do you already have a model<br />you want to improve?"}
     IMPROVE -->|"Yes"| CARE{"What do you care about?"}
     CARE -->|Speed| SPEED[Random Search]
     CARE -->|Accuracy| ACC[Grid Search]
     IMPROVE -->|"No"| LINEAR{"Plot your data<br />onto a graph<br />can you seperate it<br />with a straight line?"}
-    LINEAR -->|"No"| NN["Use a neural net"]
+    LINEAR -->|"No"| NN["Neural net"]
     LINEAR -->|"Yes"| LR["Linear Regression"]
 ```
 
