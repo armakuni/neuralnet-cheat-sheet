@@ -1,5 +1,9 @@
 # Flow Charts to make Machine Learning Easier
 
+**Note:** these are rules of thumb 👍, not hard laws. They are designed for people (well me, it's mostly designed for [me](https://github.com/PurpleBooth)) from a software development world who are learning about machine 🖥️ learning, to stop them from getting unexpected results. 
+
+More experienced 🔢mathemagicians✨ or 👨‍🔬 data scientists 👩‍🔬 might recommend something else.
+
 ## What activation function should I use?
 
 ```mermaid
