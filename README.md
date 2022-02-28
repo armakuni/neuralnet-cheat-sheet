@@ -23,7 +23,7 @@ graph TD
 graph TD
     A[What metric function should I use?] --> B{"What's the question?"}
     B -->|Classification| C[Use Accuracy]
-    B -->|Something else| C[Use Loss]
+    B -->|Something else| D[Use Loss]
 ```
 
 
